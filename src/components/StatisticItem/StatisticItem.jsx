@@ -9,5 +9,5 @@ export const StatisticItem = ({ title, total }) => {
     {/* Тут має бути іконка */}
     <StatisticCounter>{ total }</StatisticCounter>
     <StatisticText>{ title }</StatisticText>
-  </StatisticBox>;
+  </StatisticBox>
 };

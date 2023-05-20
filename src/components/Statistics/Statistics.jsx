@@ -14,7 +14,7 @@ export const Statistics = ({ title, stats }) => {
   {
     return (<StatisticItem key={id} title={title} total={total} />)
     }
-)};
+)}
 </StatisticsList>
     </>
   );
