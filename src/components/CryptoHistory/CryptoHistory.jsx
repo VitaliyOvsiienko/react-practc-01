@@ -1,6 +1,6 @@
 import { BaseTable, THead, Th, Tr, Td } from './CryptoHistory.styled';
 // import transactions from 'data/transactions.json';
-import {formatDate} from 'utils/formatDistanceToNow';
+import {formatDatePp} from 'utils/formatDistanceToNow';
 
 export const CryptoHistory = ({items}) => {
   return (<BaseTable>
@@ -16,11 +16,11 @@ export const CryptoHistory = ({items}) => {
   <tbody>
     {items.map(({id, price, amount, date}) => 
       <Tr key={id}>
-      <Td>{id}</Td>
-      <Td>{price}</Td>
+        <Td>{id}</Td>
+        <Td>{price}</Td>
         <Td>{amount}</Td>
-        <Td>{formatDate(date)}</Td>
-    </Tr>
+        <Td>{formatDatePp(date, "Pp")}</Td>
+      </Tr>
   )}
   </tbody>
   </BaseTable>
